@@ -1,47 +1,47 @@
-﻿*{
-    margin: 0;
-    padding: 0;
-}
-body{
+﻿body{
     background: url('img/bg_header.jpg') no-repeat;
 }
-.container .jumbotron{
-    background-color: transparent;
+.container header{
+    height: 600px;
+    padding-top: 200px;
 }
-.container .jumbotron h1{
-    height: 10em;
-    margin-top: 5em;
+.container header h1{
+    margin-bottom: 100px;
 }
 .container > .row > div > .thumbnail{
     position: relative;
-
     border: none;
     background-color: transparent;
 }
 .container > .row > div > .thumbnail > img{
-	height: calc(width * 0.75);
+    
 }
 .container > .row > div > .thumbnail .hide_text{
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-
     padding-top: 15%;
-
     transition: opacity 1s;
     text-align: center;
-
-    opacity: 0;
+    /*opacity: 0;*/
     color: #fff;
     background-color: rgba(0,0,0,0.5);
+}
+.container > .row > div > .thumbnail:hover .hide_text{
+    opacity: 1;
 }
 .container > .row > div > .thumbnail .hide_text h4{
     margin-top: 15%;
 }
-.container > .row > div > .thumbnail:hover .hide_text{
-    transition: opacity 1s;
-
-    opacity: 1;
+.container > .row > div > .thumbnail .hide_text a{
+    display: block;
+}
+footer{
+    background-color: rgba(0,0,0,0.1);
+    height: 100px;
+    padding-top: 40px;
+    padding-right: 20px;
+    text-align: right;
 }
