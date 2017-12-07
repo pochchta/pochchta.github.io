@@ -1,11 +1,11 @@
 ﻿body{
     background: url('img/bg_header.jpg') no-repeat;
 }
-body > .container header{
+body > .container > header{
     height: 600px;
     padding-top: 200px;
 }
-body > .container header h1{
+body > .container > header h1{
     margin-bottom: 100px;
 }
 body > .container > .row > div{
@@ -64,7 +64,7 @@ body > .container > .row > div:hover .hide_text a,
 body > .container > .row > div:hover .hide_bg{
     opacity: 1;
 }
-footer{
+body > .container > footer{
     background-color: rgba(0,0,0,0.07);
     height: 100px;
     padding-top: 40px;
