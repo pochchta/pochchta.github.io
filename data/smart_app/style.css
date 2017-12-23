@@ -1,27 +1,27 @@
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("/fonts/Roboto/RobotoRegular/RobotoRegular.eot");
-	src: url("/fonts/Roboto/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
-	url("/fonts/Roboto/RobotoRegular/RobotoRegular.woff") format("woff"),
-	url("/fonts/Roboto/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-family: "RalewayRegular";
+	src: url("/fonts/Raleway/RalewayRegular/RalewayRegular.eot");
+	src: url("/fonts/Raleway/RalewayRegular/RalewayRegular.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/Raleway/RalewayRegular/RalewayRegular.woff") format("woff"),
+	url("/fonts/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
-	font-family: "RobotoLight";
-	src: url("/fonts/Roboto/RobotoLight/RobotoLight.eot");
-	src: url("/fonts/Roboto/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-	url("/fonts/Roboto/RobotoLight/RobotoLight.woff") format("woff"),
-	url("/fonts/Roboto/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-family: "RalewayLight";
+	src: url("/fonts/Raleway/RalewayLight/RalewayLight.eot");
+	src: url("/fonts/Raleway/RalewayLight/RalewayLight.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/Raleway/RalewayLight/RalewayLight.woff") format("woff"),
+	url("/fonts/Raleway/RalewayLight/RalewayLight.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 300;
 }
 @font-face {
-	font-family: "RobotoBold";
-	src: url("/fonts/Roboto/RobotoBold/RobotoBold.eot");
-	src: url("/fonts/Roboto/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
-	url("/fonts/Roboto/RobotoBold/RobotoBold.woff") format("woff"),
-	url("/fonts/Roboto/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-family: "RalewayBold";
+	src: url("/fonts/Raleway/RalewayBold/RalewayBold.eot");
+	src: url("/fonts/Raleway/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/Raleway/RalewayBold/RalewayBold.woff") format("woff"),
+	url("/fonts/Raleway/RalewayBold/RalewayBold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 700;
 }
