@@ -244,7 +244,7 @@ a.my_a:hover{
 	height: 80px;
 }
 .section:nth-child(2) .fp-slidesNav a p{
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	color:  #9fa9a9;	
@@ -261,13 +261,13 @@ a.my_a:hover{
     width: 100%;
 }
 .section:nth-child(2) .slide h1{
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	color:  #636c6c;
 	font-size: 24px;/* Приближение из-за подстановки шрифтов */
 	font-weight: 700;
 }	
 .section:nth-child(2) .slide p{
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	color:  #b0b8b8;
 	font-size: 16px;/* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
@@ -328,7 +328,7 @@ a.my_a:hover{
 .section:nth-child(4) .slide p{
 	width: 300px;
 	margin: 0 auto;
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	color: #8c9494;
 	font-size: 14px; /* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
@@ -430,7 +430,7 @@ a.my_a:hover{
 	height: 100px;
 }
 .section:nth-child(6) p.review{
-	font-family: DroidSerif;
+	font-family: 'DroidSerif', serif;
 	color: #8c9494;
 	font-size: 24px; /* Приближение из-за подстановки шрифтов */
 	font-style: italic;
@@ -439,7 +439,7 @@ a.my_a:hover{
 	margin: 40px 0 30px 0;
 }
 .section:nth-child(6) p.author{
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	color:  rgba(93, 202, 136, 0.9);
 	font-size: 24px;/* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
@@ -456,7 +456,7 @@ a.my_a:hover{
 	text-align: center;
 }
 .section:last-child h1{
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	color: #8c9494;
 	font-size: 24px; /* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
@@ -496,7 +496,7 @@ a.my_a:hover{
 	display: inline-block;
 }	
 .section:last-child li a{
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	color:  #8c9494;
 	font-size: 14px;/* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
