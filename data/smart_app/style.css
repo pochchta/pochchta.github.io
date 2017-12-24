@@ -187,22 +187,25 @@ a.my_a:hover{
 
 
 /*features*/
-.section:nth-child(2) .my_table_cell{
-	vertical-align: bottom;
+.section:nth-child(2) .fp-slidesNav,
+.section:nth-child(2) .fp-tableCell{
+	height: 500px !important;			/*slide area*/
 }
-.section:nth-child(2) .my_slide_name h1{
+.section:nth-child(2) .container:nth-child(2){
+	margin-top: 30px;
+}
+.section:nth-child(2) .my_hb{
 	color:  #636c6c;
 	text-align: center;	
 }
-.section:nth-child(2) .my_slide_name p{
+.section:nth-child(2) .my_p{
 	color:  #b0b8b8;
 	text-align: center;	
-	margin-bottom: 210px;	
 	margin-top: 25px;
+	margin-bottom: 0;
 }
 .section:nth-child(2) .fp-slidesNav{
 	display: table;
-    height: 100vh;
 	position: static;
 }
 .section:nth-child(2) .fp-slidesNav ul{
@@ -225,14 +228,14 @@ a.my_a:hover{
 .section:nth-child(2) .fp-slidesNav a:active{
 	opacity: 1;
 }
-.section:nth-child(2) .fp-slidesNav a.active{
-	color: rgba(93, 202, 136, 0.9);
-}
 .section:nth-child(2) .fp-slidesNav a:before{
     display: inline-block;
     width: 48px;
     text-align: center;
 }	
+.section:nth-child(2) .fp-slidesNav a.active{
+	color: rgba(93, 202, 136, 0.9);
+}
 .section:nth-child(2) .fp-slidesNav a.active:after{
 	position: absolute;
 	top: -16px;
@@ -509,7 +512,9 @@ a.my_a:hover{
 
 
 
-
+	.section:nth-child(2){
+		padding-top: 110px;		/*menu overlap*/
+	}
 /*media*/
 @media (max-width: 767px) {
 	.section:nth-child(1) .fp-tableCell{
@@ -527,6 +532,10 @@ a.my_a:hover{
 	}
 	.section:nth-child(6) input[type='submit']{
 		width: 80px;
+	}
+
+	.section:nth-child(2){
+		padding-top: 51px;		/*menu overlap*/
 	}
 }
 @media (min-width: 768px) {
@@ -551,6 +560,9 @@ a.my_a:hover{
 }
 @media (max-height: 725px) {
 	.my_hl{
+		display: none;
+	}
+	.section:nth-child(2) .container:nth-child(1){
 		display: none;
 	}
 }
