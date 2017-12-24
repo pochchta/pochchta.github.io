@@ -294,6 +294,8 @@ a.my_a:hover{
 .section:nth-child(3) .row > div:last-child{
 	background: url("img/3-phone.jpg") no-repeat center center;
 	height: 696px;
+	-webkit-background-size: 55%;
+	background-size: 55%;
 }
 
 
@@ -357,6 +359,8 @@ a.my_a:hover{
 .section:nth-child(5) .row > div:first-child{
 	background: url("img/5-phone.jpg") no-repeat center center;
 	height: 696px;
+	-webkit-background-size: 55%;
+	background-size: 55%;	
 }
 
 
