@@ -187,13 +187,6 @@ a.my_a:hover{
 
 
 /*features*/
-.section:nth-child(2) .fp-slidesNav,
-.section:nth-child(2) .fp-tableCell{
-	height: 500px !important;			/*slide area*/
-}
-.section:nth-child(2) .container:nth-child(2){
-	margin-top: 30px;
-}
 .section:nth-child(2) .my_hb{
 	color:  #636c6c;
 	text-align: center;	
@@ -202,15 +195,12 @@ a.my_a:hover{
 	color:  #b0b8b8;
 	text-align: center;	
 	margin-top: 25px;
-	margin-bottom: 0;
 }
 .section:nth-child(2) .fp-slidesNav{
-	display: table;
 	position: static;
 }
 .section:nth-child(2) .fp-slidesNav ul{
-    display: table-cell;
-    vertical-align: middle;
+    margin-top: 30px;
 }	
 .section:nth-child(2) .fp-slidesNav li{
 	width: auto;
@@ -274,6 +264,7 @@ a.my_a:hover{
 	color:  #b0b8b8;
 	font-size: 16px;/* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
+	margin-bottom: 50px;
 }
 
 
@@ -291,9 +282,9 @@ a.my_a:hover{
 	color:  #636c6c;
 	border-color:  rgba(99, 108, 108, 0.50);
 }
-.section:nth-child(3) .row > div:first-child .my_table_cell{
+/*.section:nth-child(3) .row > div:first-child .my_table_cell{
 	height: 696px;
-}
+}*/
 .section:nth-child(3) .row > div:last-child{
 	background: url("img/3-phone.jpg") no-repeat center center;
 	height: 696px;
@@ -512,15 +503,24 @@ a.my_a:hover{
 
 
 
-	.section:nth-child(2){
+	.section{
 		padding-top: 110px;		/*menu overlap*/
 	}
+	.section .my_table_cell{
+		height: calc(100vh - 110px) !important;
+	}		
+	.section .fp-slidesNav,
+	.section.fp-tableCell{
+		height: auto !important;
+	}		
+	.fp-tableCell{
+		height: auto !important;
+		display: block;
+	}
+
 /*media*/
 @media (max-width: 767px) {
-	.section:nth-child(1) .fp-tableCell{
-		padding-top: 70px;
-	}
-	.section:nth-child(1) .fp-tableCell{
+	.section:nth-child(1) .my_table_cell{
 		vertical-align: top;
 	}
 	.navbar li{
@@ -534,8 +534,11 @@ a.my_a:hover{
 		width: 80px;
 	}
 
-	.section:nth-child(2){
+	.section{
 		padding-top: 51px;		/*menu overlap*/
+	}
+	.section .my_table_cell{
+		height: calc(100vh - 51px) !important;
 	}
 }
 @media (min-width: 768px) {
@@ -553,6 +556,8 @@ a.my_a:hover{
 		display: none;
 	}
 }	
+
+
 @media (max-height: 1250px) {
 	.section:nth-child(4) .my_slide_name{
 		display: none;
@@ -562,7 +567,22 @@ a.my_a:hover{
 	.my_hl{
 		display: none;
 	}
-	.section:nth-child(2) .container:nth-child(1){
+	.section:nth-child(2) .row:nth-child(1){
 		display: none;
+	}
+}
+@media (max-height: 450px) {
+	.section:nth-child(1) .my_p{
+	    margin-top: 20px;
+	    margin-bottom: 23px;
+	}
+	.section:nth-child(2) .slide{
+		text-align: center;
+	}
+	.section:nth-child(2) .slide p{
+		display: none;
+	}
+	.section:nth-child(2) .slide h1{
+		margin-top: 10px;
 	}
 }
