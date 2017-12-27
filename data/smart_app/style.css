@@ -41,8 +41,7 @@
 
 
 
-
-
+/*reset style*/
 *{
 	outline: none;
 }
@@ -65,6 +64,8 @@ input:-ms-input-placeholder{
     opacity: 0.7;
 }
 
+
+/*my_class*/
 .my_line{
 	background-color:  #949c9c;
 	width: 104px;
@@ -120,24 +121,10 @@ a.my_a:hover{
 	display: table-cell;
 	vertical-align: middle;
 }
-/*.my_slide_container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.my_slide_name{
-	height: 50%;
-	display: table;
-}
-.my_slide_bottom{
-	height: 50%;
-	display: table;
-}	*/
 
 
 
+/*navigation*/
 .navbar {
 	min-height: 40px;
 }
@@ -169,7 +156,7 @@ a.my_a:hover{
 
 
 
-
+/*arrows*/
 .fp-controlArrow.fp-prev {
 	border-right-color: rgba(34, 231, 24, 0.15)
 }
@@ -179,7 +166,7 @@ a.my_a:hover{
 
 
 
-
+/*----------------------start slides----------------------*/
 /*home*/
 .section:nth-child(1) {
 	background: url("img/1-hand.png") 65% bottom no-repeat,
@@ -259,13 +246,13 @@ a.my_a:hover{
 .section:nth-child(2) .slide h1{
 	font-family: 'Raleway', sans-serif;
 	color:  #636c6c;
-	font-size: 24px;/* Приближение из-за подстановки шрифтов */
+	font-size: 24px;
 	font-weight: 700;
 }	
 .section:nth-child(2) .slide p{
 	font-family: 'Raleway', sans-serif;
 	color:  #b0b8b8;
-	font-size: 16px;/* Приближение из-за подстановки шрифтов */
+	font-size: 16px;
 	font-weight: 400;
 	margin-bottom: 50px;
 }
@@ -317,9 +304,9 @@ a.my_a:hover{
 	margin: 0 auto;
 	font-family: 'Raleway', sans-serif;
 	color: #8c9494;
-	font-size: 14px; /* Приближение из-за подстановки шрифтов */
+	font-size: 14px; 
 	font-weight: 400;
-	line-height: 24px; /* Приближение из-за подстановки шрифтов */
+	line-height: 24px; 
 	text-align: center;
 	padding: 40px 15px 0 15px;
 }
@@ -352,22 +339,36 @@ a.my_a:hover{
 
 
 /*about*/
-.section:nth-child(6) .my_slide_name .my_table_cell {
-	vertical-align: bottom;
-}
-.section:nth-child(6) .my_slide_name h1{
+.section:nth-child(6) .row:nth-child(1) h1{
 	color:  #636c6c;
 	text-align: center;	
-	margin-bottom: 150px;				/* h/2 slide */
+	margin-bottom: 100px;			
 }	
-.section:nth-child(6) .my_slide_bottom .my_table_cell {
-	vertical-align: top;
+.section:nth-child(6) .slide .img{
+	background: url("img/6-head.png") no-repeat center center;
+	height: 100px;
+}
+.section:nth-child(6) p.review{
+	font-family: 'DroidSerif', serif;
+	color: #8c9494;
+	font-size: 24px; 
+	font-style: italic;
+	line-height: 24px; 
+	text-align: center;
+	margin: 40px 0 30px 0;
+}
+.section:nth-child(6) p.author{
+	font-family: 'Raleway', sans-serif;
+	color:  rgba(93, 202, 136, 0.9);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
 }
 .section:nth-child(6) .fp-slidesNav{
-	margin-top: 160px !important;		/* h/2 slide */
-	position: relative;
-	z-index: 5;
+	position: static;
 	text-align: center;
+	margin-top: 20px !important;
 }
 .section:nth-child(6) .fp-slidesNav a{
 	background-color: #8c9494;
@@ -377,14 +378,15 @@ a.my_a:hover{
 	background-color: #5dca88;
 	border-radius: 50%;
 }
-.section:nth-child(6) .my_slide_bottom h1{
+.section:nth-child(6) .row:nth-child(3) h1{
 	color:  #8c9494;
 	text-align: center;		
+	margin-top: 100px;
+	margin-bottom: 30px;
 }
 .section:nth-child(6) form{
 	position: relative;
-	z-index: 5;
-	margin-top: 40px;	
+	margin-top: 20px;
 }
 .section:nth-child(6) input{
 	border-radius: 20px;
@@ -413,27 +415,7 @@ a.my_a:hover{
 .section:nth-child(6) input[type='submit']:active{
 	opacity: 1;
 }	
-.section:nth-child(6) .slide .img{
-	background: url("img/6-head.png") no-repeat center center;
-	height: 100px;
-}
-.section:nth-child(6) p.review{
-	font-family: 'DroidSerif', serif;
-	color: #8c9494;
-	font-size: 24px; /* Приближение из-за подстановки шрифтов */
-	font-style: italic;
-	line-height: 24px; /* Приближение из-за подстановки шрифтов */
-	text-align: center;
-	margin: 40px 0 30px 0;
-}
-.section:nth-child(6) p.author{
-	font-family: 'Raleway', sans-serif;
-	color:  rgba(93, 202, 136, 0.9);
-	font-size: 24px;/* Приближение из-за подстановки шрифтов */
-	font-weight: 400;
-	line-height: 24px;/* Приближение из-за подстановки шрифтов */
-	text-align: center;
-}
+
 
 
 
@@ -441,12 +423,15 @@ a.my_a:hover{
 /*footer*/
 .section:last-child{
 	background-color:  #2d312f;
+}
+.section:last-child .my_table{
 	text-align: center;
+	width: 100%;
 }
 .section:last-child h1{
 	font-family: 'Raleway', sans-serif;
 	color: #8c9494;
-	font-size: 24px; /* Приближение из-за подстановки шрифтов */
+	font-size: 24px;
 	font-weight: 400;
 }	
 .section:last-child .social{
@@ -466,7 +451,7 @@ a.my_a:hover{
 .section:last-child .social i{
 	background-color: #5d6461;
 	color: #2d312f;
-	font-size: 20px;/* Приближение из-за подстановки шрифтов */
+	font-size: 20px;
 	line-height: 42px;
 	font-weight: 400;
 	height: 42px;
@@ -486,10 +471,13 @@ a.my_a:hover{
 .section:last-child li a{
 	font-family: 'Raleway', sans-serif;
 	color:  #8c9494;
-	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-size: 14px;
 	font-weight: 400;
 	margin: 0 9px 0 9px;
 }
+/*----------------------end slides----------------------*/
+
+
 
 
 /*style for media*/
@@ -553,6 +541,9 @@ a.my_a:hover{
 	.section:nth-child(4) .row:first-child{
 		display: none;
 	}
+	.section:nth-child(6) .row:nth-child(3) h1{
+		display: none;
+	}
 }
 @media (max-height: 725px) {
 	.my_line,
@@ -560,6 +551,9 @@ a.my_a:hover{
 		display: none;
 	}
 	.section:nth-child(2) .row:nth-child(1){
+		display: none;
+	}
+	.section:nth-child(6) .row:nth-child(1) h1{
 		display: none;
 	}
 }
@@ -588,4 +582,11 @@ a.my_a:hover{
 		margin-top: 15px;
 		margin-bottom: 18px;
 	}	
+	.section:nth-child(6) .fp-slidesNav,
+	.section:nth-child(6) .author{
+		display: none;
+	}
+	.section:nth-child(6) p.review {
+		margin: 20px 0 15px 0;
+	}
 }
