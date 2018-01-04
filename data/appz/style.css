@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("/fonts/Raleway/RalewayRegular/RalewayRegular.eot");
+	src: url("/fonts/Raleway/RalewayRegular/RalewayRegular.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/Raleway/RalewayRegular/RalewayRegular.woff") format("woff"),
+	url("/fonts/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Raleway";
+	src: url("/fonts/Raleway/RalewayLight/RalewayLight.eot");
+	src: url("/fonts/Raleway/RalewayLight/RalewayLight.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/Raleway/RalewayLight/RalewayLight.woff") format("woff"),
+	url("/fonts/Raleway/RalewayLight/RalewayLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Raleway";
+	src: url("/fonts/Raleway/RalewayBold/RalewayBold.eot");
+	src: url("/fonts/Raleway/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/Raleway/RalewayBold/RalewayBold.woff") format("woff"),
+	url("/fonts/Raleway/RalewayBold/RalewayBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "DroidSerif";
+	src: url("/fonts/DroidSerif/DroidSerifItalic/DroidSerifItalic.eot");
+	src: url("/fonts/DroidSerif/DroidSerifItalic/DroidSerifItalic.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/DroidSerif/DroidSerifItalic/DroidSerifItalic.woff") format("woff"),
+	url("/fonts/DroidSerif/DroidSerifItalic/DroidSerifItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+/*reset style*/
+*{
+	outline: none;
+}
+
+/*media*/
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}	
