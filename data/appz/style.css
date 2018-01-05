@@ -31,6 +31,27 @@
 	font-weight: normal;
 }
 
+
+/*my_style*/
+a.my_button{
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	background-color: #f12078;
+	display: block;
+	width: 137px;
+	height: 53px;
+	line-height: 53px;
+	text-decoration: none;
+}
+a.my_button:hover{
+	opacity: 0.8;
+}
+a.my_button:active{
+	opacity: 0.9;
+}
+
 /*header*/
 header{
 	background: center no-repeat;
@@ -52,26 +73,13 @@ header .row > div:nth-child(2) p{
 	margin-top: 30px;
 }
 header .row > div:nth-child(2) a{
-	color:  #ffffff;
-	font-size: 18px;/* Приближение из-за подстановки шрифтов */
-	font-weight: 700;
-	text-align: center;
-	background-color: #f12078;
-	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
-	display: block;
-	width: 137px;
-	height: 53px;
-	line-height: 53px;
-	box-sizing: border-box;
-	text-decoration: none;
 	margin-top: 40px;
+	margin-bottom: 80px;
 }
-header .row > div:nth-child(2) a:hover{
-	opacity: 0.8;
-}
-header .row > div:nth-child(2) a:active{
-	opacity: 0.9;
-}
+
+
+
+
 
 
 
@@ -79,13 +87,13 @@ header .row > div:nth-child(2) a:active{
 /*carousel*/
 .container-carousel{
 	position: relative;
-	margin-top: -44px;
+	top: -44px;
 }
 .container-carousel .arrow{
 	font-size: 40px;
 	position: absolute;
 	top: 50%;
-	left: 0%;
+	left: 0;
 	margin-top: -20px;
 	z-index: 5;
 	color: rgba(241, 32, 120, 0.5);
@@ -93,7 +101,7 @@ header .row > div:nth-child(2) a:active{
 
 }
 .container-carousel .arrow.right{
-	right: 0%;
+	right: 0;
 	left: auto;
 }	
 .container-carousel .arrow:hover{
@@ -111,24 +119,28 @@ header .row > div:nth-child(2) a:active{
 	margin: 0 auto;
 	background-color: #fff;
 	padding-top: 19px;
+	display: block;
+	text-decoration: none;
 }
 .container-carousel .photo{
 	width: 182px;
 	height: 105px;
 	margin: auto;
+	opacity: 0.5;
+	transition: opacity 0.5s;	
 }
 .container-carousel h3{
-	color: #171717;
 	font-size: 16px; /* Приближение из-за подстановки шрифтов */
 	font-weight: 700;
 	text-align: left;
 	padding-left: 19px;
+	color: #c6c6c6;
 }
 .container-carousel h3 span{
 	font-weight: 400;
 }
 .container-carousel .divider{
-	background-color: #f5227d;
+	background-color:  #c6c6c6;
 	width: 182px;
 	height: 2px;
 	margin: 0 auto;
@@ -136,16 +148,117 @@ header .row > div:nth-child(2) a:active{
 .container-carousel p{
 	padding-top: 15px;
 	padding-left: 19px;
-	color: #5f5f5f;
+	color:  #8e8e8e;
 	font-size: 12px; /* Приближение из-за подстановки шрифтов */
 	line-height: 16px; /* Приближение из-за подстановки шрифтов */
 	text-align: left;
 }
-.container-carousel .active:first-child{
-	opacity: 0.1;
+.container-carousel .cadre:hover .photo{
+	opacity: 1;
+}	
+.container-carousel .cadre:hover h3{
+	color: #171717;
+}
+.container-carousel .cadre:hover .divider{
+	background-color:  #f5227d;
+}
+.container-carousel .cadre:hover p{
+	color:  #5f5f5f;
 }
 
 
+
+/*tagline*/
+.tagline{
+	text-align: center;
+}
+.tagline p{
+	color: #1e1f22;
+	font-size: 24px; 
+
+	display: inline-block;
+}
+.tagline p.bold{
+	color: #1e1f22;
+	font-size: 24px;
+	font-weight: 700;
+	display: inline-block;	
+}
+.tagline a{
+	font-size: 24px; 
+	display: inline-block;
+	margin: 0 10px;
+}
+.tagline .img{
+	display: inline-block;
+	width: 78px;
+	height: 40px;
+	background: center no-repeat;
+	margin-bottom: -9px;
+}
+
+
+
+
+
+/*features*/
+.features{
+	margin-top: 50px;
+}
+.features .row > div:last-child{
+	text-align: center;
+}
+.features h3{
+	color: #2e2e2e;
+	font-size: 24px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	text-align: left;
+}
+.features h3 .span{
+	font-weight: 400;
+
+}
+.features p{
+	color: #5e5e5e;
+	font-size: 14px; /* Приближение из-за подстановки шрифтов */
+	line-height: 20px; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	margin-bottom: 20px;
+}
+.features img{
+	max-width: 70vw;
+    margin-top: 30px;	
+}
+.features .border{
+	background-color: #1d1e22;
+	width: 100%;
+	height: 2px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+
+
+
+footer{
+	margin-bottom: 20px;
+}
+footer .left-side{
+	float: left;
+}
+footer .right-side{
+	float: right;
+}
+footer p{
+	display: inline;
+	color: #2e2e2e;
+	font-size: 12px; /* Приближение из-за подстановки шрифтов */
+}
+footer a{
+	text-decoration: none;
+	color: #ee1f75;
+	font-size: 12px; /* Приближение из-за подстановки шрифтов */
+}
 
 
 
@@ -155,5 +268,7 @@ header .row > div:nth-child(2) a:active{
 
 }
 @media (min-width: 992px) {
-
+	.features img{
+		margin-top: 0;
+	}	
 }
