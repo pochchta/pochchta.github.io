@@ -11,6 +11,9 @@
 	<link rel="stylesheet" href="/libs/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="media.css">
+
+	<link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.min.css">
+
 </head>
 <body data-spy="scroll" data-target="#navbar">
 	<div class="container_main">
@@ -73,7 +76,7 @@
 						<div class="description">
 							Позвоните нам или оставьте заявку
 						</div>
-						<a href="#" class="btn btn-primary">
+						<a class="btn btn-primary" data-fancybox="modal" data-src="#call-form" href="javascript:;">
 							ОСТАВИТЬ ЗАЯВКУ
 						</a>
 					</div>	
@@ -337,11 +340,28 @@
 
 		</div>
 	</div>
+	<div class="call-form" id="call-form">
+		<h4>
+			Вам нужно индивидуальное решение?
+		</h4>
+		<span>
+			Позвоните нам или оставьте заявку в форме ниже
+		</span>
+		<input class="input_name" type="text" placeholder="Имя">
+		<input type="text" placeholder="Телефон">
+		<a href="#" class="btn btn-primary">
+			ОСТАВИТЬ ЗАЯВКУ
+		</a>
+	</div>
 	<script src="/libs/jquery/jquery.min.js"></script>
 	<script src="/libs/slick/slick.min.js"></script>	
 	<script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="/libs/fancybox/jquery.fancybox.min.js"></script>
+
 	<script>
 		$(document).ready(function(){
+			// ---------------------------------------------------------slick
 			$('.slider_header').slick({
 				dots: true
 			});
@@ -416,7 +436,7 @@
 			});
 			$('.slider_cert_left').on('click', function() {
 				$('.slider_cert').slick('slickPrev');
-			});								
+			});		
 		});
 	</script>
 </body>

@@ -82,7 +82,8 @@ a.a_black:hover{
 }
 .btn-primary,
 .btn-primary:active,
-.btn-primary:visited{
+.btn-primary:visited,
+.btn-primary:focus{
 	font-family: "GothamPro", sans-serif;
 	color:  #fec300;
 	font-size: 14px;
@@ -166,6 +167,11 @@ a.sidebar_drop:active{
 	width: 311px;
 	position: fixed;
 	z-index: 20;
+	overflow-y: auto;
+	max-height: 100%;
+}
+.sidebar::-webkit-scrollbar {
+    width: 0px;
 }
 .sidebar .logo{
 	display: block;
@@ -656,9 +662,10 @@ a.sidebar_drop:active{
 	margin-bottom: 18px;
 	display: inline-block;
 }
-.contacts .right{
+.contacts .right,
+.call-form{
 	width: 350px;
-	text-align: center;
+	text-align: center !important;
 	margin: 0 20px;
 }
 .contacts .right h4{
@@ -670,7 +677,16 @@ a.sidebar_drop:active{
 	margin-top: 150px;
 	margin-bottom: 30px;
 }
-.contacts .right span{
+.call-form h4{
+	font-family: "GothamPro", sans-serif;
+	color: #000000;
+	font-size: 24px; 
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.contacts .right span,
+.call-form span{
 	font-family: "GothamPro", sans-serif;
 	color: #000000;
 	font-size: 18px; 
@@ -679,7 +695,8 @@ a.sidebar_drop:active{
 	display: block;
 	margin-bottom: 46px;
 }
-.contacts .right input{
+.contacts .right input,
+.call-form input{
 	width: 100%;
 	height: 50px;
 	padding: 0 25px;
@@ -692,10 +709,20 @@ a.sidebar_drop:active{
 	outline: none;
 	letter-spacing: 0.05em;
 }
-.contacts .right .input_name{
+.contacts .right .input_name,
+.call-form .input_name{
 	margin-bottom: 30px;
 }
-.contacts .right .btn-primary{
+.contacts .right .btn-primary,
+.call-form .btn-primary{
 	margin-top: 41px;
 	margin-bottom: 50px;
+}
+
+
+.call-form{
+	display: none;
+/*	width: 300px;
+	height: 200px;*/
+	border-radius: 10px;
 }
